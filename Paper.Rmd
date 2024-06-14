@@ -1,90 +1,132 @@
 ---
-title             : "The title"
-shorttitle        : "Title"
-
+title             : "Coping by acts: Romanian Validation of the Behavioral Emotion Regulation Questionnaire (BERQ)"
+shorttitle        : "Romanian Behavioral Emotion Regulation Questionnaire"
 author: 
-  - name          : "First Author"
+  - name          : "Cristian Opariuc-Dan"
     affiliation   : "1"
     corresponding : yes    # Define only one corresponding author
-    address       : "Postal address"
-    email         : "my@email.com"
-    role: # Contributorship roles (e.g., CRediT, https://credit.niso.org/)
-      - "Conceptualization"
-      - "Writing - Original Draft Preparation"
-      - "Writing - Review & Editing"
-  - name          : "Ernst-August Doelle"
-    affiliation   : "1,2"
-    role:
-      - "Writing - Review & Editing"
-      - "Supervision"
+    address       : "Faculty of Law and Administrative Sciences, University Alley, No. 1, Constanța, Romania"
+    email         : "cristian.opariuc@365.univ-ovidius.ro"
+    role:         # Contributorship roles (e.g., CRediT, https://credit.niso.org/)
+      - Conceptualization
+      - Data collection
+      - Data curation
+      - Writing - Original Draft Preparation
+      - Writing - Review & Editing
+      - Formal analysis
+      - Methodology
+      - Project administration
+      - Resources
+      - Validation
+      - Visualization
+      - Ethical procedures approvals
 
 affiliation:
   - id            : "1"
-    institution   : "Wilhelm-Wundt-University"
-  - id            : "2"
-    institution   : "Konstanz Business School"
+    institution   : "Ovidius University, Constanța, Romania"
 
 authornote: |
-  Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
-
-  Enter author note here.
+    Cristian Opariuc-Dan - Faculty of Law and Administrative Sciences, Ovidius University, Constanța, Associated Professor; PhD School, Psychology and Educational Sciences, University of Bucharest, Associated Professor; PhD School, Psychology and Educational Sciences, "Al. I. Cuza" University, Iasi, Associated Professor.
+    
+      Many thanks to Ms Georgiana Budai for their work and assistance in all research's stages, includind data collection, data quality aassurance, data screening, purification and proofreading.
 
 abstract: |
-  One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any discipline.
-  Two to three sentences of **more detailed background**, comprehensible  to scientists in related disciplines.
-  One sentence clearly stating the **general problem** being addressed by  this particular study.
-  One sentence summarizing the main result (with the words "**here we show**" or their equivalent).
-  Two or three sentences explaining what the **main result** reveals in direct comparison to what was thought to be the case previously, or how the  main result adds to previous knowledge.
-  One or two sentences to put the results into a more **general context**.
-  Two or three sentences to provide a **broader perspective**, readily comprehensible to a scientist in any discipline.
+  [TO BE DONE]
   
-  <!-- https://tinyurl.com/ybremelq -->
-  
-keywords          : "keywords"
-wordcount         : "X"
-
-bibliography      : "r-references.bib"
-
+keywords          : "TO BE DONE"
+wordcount         : "1680 words in text body 1080 words in reference section"
+bibliography      : ["r-references.bib", "BERQ.bib"]
 floatsintext      : no
 linenumbers       : yes
 draft             : no
 mask              : no
-
 figurelist        : no
 tablelist         : no
 footnotelist      : no
-
 classoption       : "man"
-output            : papaja::apa6_pdf
+documentclass     : "apa7"
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+
+output            :
+  pdf_document    : papaja::apa6_pdf
+  word_document   : papaja::apa6_docx
+  
+header-includes   :
+  - |
+    \usepackage{ragged2e}
 ---
 
 ```{r setup, include = FALSE}
-library("papaja")
-r_refs("r-references.bib")
+  library(papaja)
+  r_refs("r-references.bib")
 ```
 
 ```{r analysis-preferences}
-# Seed for random number generation
-set.seed(42)
-knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+  # Seed for random number generation
+  set.seed(42232)
+  knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
+\justify
+Emotions play a crucial role in our lives, by having a great impact on the way we adapt to external stressors, making us more able to cope with these problems or leaving us vulnerable to the effects of adverse life events . Therefore, when it comes to dealing with stressful situations in an adaptive way, having the resources to self-regulate our emotions is crucial [@Garnefski-2001].
 
+Emotion regulation as a concept, can be defined as "the extrinsic and intrinsic processes responsible for monitoring, evaluating and modifying our emotional reactions to achieve a goal, regulating both their intensity and duration over time" [@Thompson-1994]. These processes that allow us to change our emotional experience, depending on how and when is suitable to manifest certain emotions [@Gross-1998], can focus on acting on the problem, on the emotion or the meaning of the situation [@Folkman-2000]. These processes encompass various strategies such as, for example, asking a friend for help, thinking about pleasant things unrelated to the problem, or planning a way to change the situation and acting on the decisions you decided to make. 
 
+Numerous studies related to emotion regulation processes are based on stress and coping theories [@Folkman-1988], which detail that individuals usually use both cognitive (e.g. cognitive reappraisal or catastrophizing about the situation) and behavioral (e.g. suppression of expressed emotion or ignoring the stressful event) strategies to cope with demands that exceed their resources [@Garnefski-2001; @Gross-2015, pp. 3-20], and that these are used in a conscious and controlled manner, and with a clear purpose [@Compas-2017]. Authors such as @Garnefski-2001 highlighted the importance of conducting an assessment of both cognitive and behavioral coping strategies as separate dimensions, because these coping strategies are used at different times as they represent different processes. With this in mind, they developed The Cognitive Emotion Regulation Questionnaire (CERQ) [@Garnefski-2001; @Garnefski-2007], and subsequently, The Behavioral Emotion Regulation Questionnaire (BERQ) [@Kraaij-2019], to evaluate both cognitive and behavioral emotion regulation strategies separately.
 
-# Methods
-We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
+The use of these cognitive and behavioral strategies can be more or less adaptive depending on the situation [@Gross-2014], but in general, some of them are usually classified as adaptive, while others tend to be maladaptive. Cognitive strategies like self-blame, other blame, rumination and catastrophizing are generally considered maladaptive due to their positive association with developing and maintaining of depressive and anxiety symptoms and lower well-being [@Aldao-2010a; @Aldao-2010b; @Everaert-2019; @Garnefski-2001; @Garnefski-2006a; @Zhang-2022]. This relationship is consistent across regions despite differences in strategy use across countries and cultures [@Potthoff-2016]. Strategies such as catastrophizing and self-blame are more prevalent in clinical samples, while general populations make greater use of more adaptive strategies such as positive reappraisal [@Garnefski-2002]. In the literature, the frequent use of rumination is considered a risk factor for the development of depressive symptomatology [@Everaert-2019; @Joormann-2010]. Other studies report positive associations between the use of the catastrophizing and depressive and somatic symptomatology [@Garnefski-2004; @Garnefski-2006a; @Zhang-2022]. With regard to acceptance,  that is tend to be considered an adaptive strategy, some studies highlight it’s ambiguity, sometimes being related to depression in elders and people with a psychiatric condition [@Garnefski-2006a] while others emphasize the negative association with depressive symptoms in Spanish elderly sample [@Carvajal-2022; @Jurado-2021].
 
-## Participants
+With regard to the behavioral emotion regulation strategies considered in the questionnaire developed by @Kraaij-2019, the following are included: seeking distraction by doing activities that allow us to avoid the problem and the emotions it transmits; seeking social support, sharing your emotions and seeking the help of acquaintances and friends to cope with stress; actively approaching, performing behaviors to actively and directly deal with the situation; ignoring and behaving as if nothing had happened; and withdrawal, to put distance from the stressful situation and from social contact. The first three strategies are often considered adaptive, while the latter two are seen as a negative way of coping [@Joormann-2016; @Kato-2015; @Kraaij-2019]. Recent studies had reported that withdrawal has a positive relationship with the presence of depressive, anxious and stress symptoms and that actively approach is negatively related to those symptoms [@Abdollahpourranjbar-2021; @Bhat-2021;@Kraaij-2019; @Tuna-2021; @Zhao-2020]. Other behavioral strategies, like seeking distraction reported negative relationships with anxious-depressive symptoms [@Abdollahpourranjbar-2021; @Kraaij-2019; @Zhao-2020] in some studies, while in others exhibits positive relationships with somatization [@Tuna-2021] or showed no significant relationship [@Bhat-2021]. Seeking social support also showed contradictory results, having a negative relationship with depression and anxiety in some studies [@Kraaij-2019; @@Zhao-2020], while having a positive relationship in other populations [@Abdollahpourranjbar-2021; @Bhat-2021].
 
-## Material
+Related to validity, both The Cognitive Emotional Regulation Questionnaire and The Behavioral Emotion Regulation Questionnaire report optimal reliability indices, making it a valid instrument for assessing cognitive emotion regulation strategies in both its extended 36-item version [@Garnefski-2001; @Garnefski-2007] and its reduced 18-item version  [@Garnefski-2006b], and behavioral emotion regulation strategies in its 20-item version [@Kraaij-2019]. The validity of The Cognitive Emotional Regulation Questionnaire has been tested in multiple countries and cultures [@Potthoff-2016], finding multiple Spanish validations: an 36-item version [@Dominguez-2013], a 27-item and a18-item [@Holgado-2018] for adult population, as well as versions for other populations such as children [@Orgiles-2019] and adolescents [@Chamizo-2020]. Related to The Behavioral Emotion Regulation Questionnaire, recent validations in other countries also report favorable ratings in Turkish [@Tuna-2021], Chinese [@Zhao-2020], Indian [@Bhat-2021], and Iranian [@Abdollahpourranjbar-2021] populations.
 
-## Procedure
+The aim of the present study is to carry out a Romanian translation of the Behavioral Emotion Regulation Questionnaire (BERQ-RO) and to analyze the dimensionality of the different strategies proposed, as well as to evaluate their internal consistency and reliability. Furthermore, we will assess the relationship between the use of the different behavioral and cognitive strategies, as well as the relationship between behavioral strategies and anxious and depressive symptomatology, as well as the presence of stress and emotional dysregulation.
 
-## Data analysis
+In this study we are supposing that: **(1)** the factor structure of the Romanian version of the questionnaire will be identical to the original version, retaining the five dimensions that encompass their corresponding strategies; **(2)** the Romanian version will have a good fit, as well as an optimal internal consistency, discriminant and convergent validity and a good test-retest reliability; **(3)** the use of adaptive behavioral strategies will be positively related to the use of adaptive cognitive strategies, and the use of maladaptive  behavioral strategies will be positively related with maladaptive  cognitive strategies; **(4)** the use of maladaptive behavioral strategies will be associated with the presence of depressive and anxious symptomatology, as well as greater stress and greater difficulty in emotional regulation; **(5)** the use of adaptive behavioral strategies will correlates with the appearance of less anxious-depressive symptoms as well as less stress and better competence in emotion regulation.
+
+# Method
+The initial assumptions assessment was performed by a descriptive univariate analysis, data screening for outliers and missing cases analysis, to verify univariate normality, and Mardia indicator was computed to assess multivariate normality. Internal consistency was assessed using Cronbach's \(\alpha\). Cronbach's  \(\alpha\) above .60 were considered as adequate [@taber2018]. In addition, for all BERQ subscales, other reliability indexes were reported: MacDonald's \(\omega\) and average variance extracted (AVE) [@dunn2014; @mcdonald1999]. MacDonald's \(\alpha\) of .60 to .70 and AVE above .50 was considered as adequate. Test-retest was calculated using intra-class correlations (ICC) to evaluate reliability and stability of the BERQ subscales scores. @cicchetti1994 guidelines where used, with .40 to .59 defined as fair, .60 to .74 defined as good, and above .75 considered as excellent.
+
+A confirmatory factor analysis (CFA) based on diagonally weighted least squares were used to test the factorial validity and the dimensional structure of the original instrument. A five-factor model was considered, in line with the original model approach [@Garnefski-2004]. Model fit was explored using chi-square test (\(\chi\)^2^), comparative fit index (CFI), Tucker-Lewis Index (TLI), root mean square error of approximation (RMSEA), and standard root mean square residuals (SRMR). CFI and TLI values above .95 and RMSEA and SRMR, values below .08 were considered to indicate a reasonable fit [@hu1999].
+
+Concurrent and predictive validity was measured with Spearman correlations of BERQ and DASS-21. Convergent validity was explored with the analysis of correlations between BERQ, DERS and CERQ subscales.
+
 We used `r cite_r("r-references.bib")` for all our analyses.
 
+## Participants and procedure
+```{r participants, echo=F, include=FALSE}
+  source("01 - Participants.R")
+```
+The final sample that completed all the questionnaires was comprised by `r n` people from the general Romanian population, aged between `r age.min` and `r age.max` years (M = `r age.m`, SD = `r age.sd`), of whom `r gen.p[2]`% were women. Data was collected online through a survey and the sampling method was through voluntary response. Related to the sample's education level, `r edu.p[2]`% reported to have only a primary school diploma, `r edu.p[3]`% secondary education, `r edu.p[4]`% medium grade professional certificate, `r edu.p[5]`% baccalaureate, `r edu.p[6]`% superior grade professional certificate, `r edu.p[7]`% university degree, `r edu.p[8]`% master, `r edu.p[9]`% PhD. In regard to marital status, `r mar.p[1]`% were single, `r mar.p[6]`% in a relationship, `r mar.p[2]`% married, `r mar.p[4]`% separated, `r mar.p[3]`% divorced, and `r mar.p[5]`% widow.
+
+The translation of the original BERQ questionnaire was carried out by three qualified people, two clinical psychologists and one professional translator. The translation involved three-step process: first, translation from English to Romanian, second, back-translation to English, and third, establish comparisons between the original version and the back-translation. After these steps, the translated questionnaire was distributed to twelve experts that evaluated the translation and the 5-factor structure of the questionnaire related to the items. Once this procedure was done, the BERQ was distributed online to a small sample to conduct a first reliability test. After checking reliability values were appropriate in this initial sample, the questionnaire was distributed together with the rest of the questionnaires/scales of interest for this article. People's voluntary participation was encouraged through a raffle advertised on social media. For the collection of data to evaluate test-retest reliability, an interval of a month was established. Participants who gave their consent were contacted again through email.
+
+## Measures
+**Behavioral emotion regulation strategies (BERQ).** The 20-item original version of the Behavioral Emotion Regulation Questionnaire [@Kraaij-2019] was used. It consists of five behavioral emotion regulation strategies: *seeking distraction* (e.g. "I engage in other unrelated activities"),  *actively approaching* (e.g. "I try to do something about it"), *seeking social support* (e.g. "I look for someone to comfort me"), *withdrawal* (e.g. "I avoid other people") and *ignoring* (e.g. "I move on and pretend that nothing happened"). Items were measured on a 5-point Likert scale with 1 indicating almost never and 5 suggesting almost always. Related to reliability, the original version reported good psychometric properties, with Cronbach's \(\alpha\) indices ranging between .86 to .93.
+
+**Cognitive emotion regulation strategies (CERQ).** Based in the original version of 36-item [@Garnefski-2006b; @Garnefski-2007], the 27-item Romanian adaptation [@need_citation] of the Cognitive Emotion Regulation Questionnaire was used to evaluate convergent validity and to measure cognitive emotion regulation strategies. The questionnaire has a 9-factor structure, including the following strategies: *catastrophizing* (e.g. "I continually think how horrible the situation has been"), *rumination* (e.g. "I often think about how I feel about what I have experienced"), *self-blame* (e.g. "I think that basically the cause must lie within myself"), *others-blame* (e.g. "I feel that others are responsible for what has happened"), *positive refocusing* (e.g. "I think of pleasant things that have nothing to do with it"), *positive reappraisal* (e.g. "I think I can learn something from the situation"), *putting into perspective* (e.g. "I tell myself that there are worse things in life"), *refocusing on planning* (e.g. "I think about how to change the situation") and *acceptance* (e.g. "I think I have to accept the situation"). The questionnaire includes items measured on a 5-point Likert scale with 1 indicating almost never and 5 suggesting almost always.
+
+**Difficulties in emotion regulation (DERS).** The 28-item Romanian adaptation of Difficulties in Emotion Regulation Scale [@need_citation] of the original version of 36-item developed by @Gratz-2004 was selected to evaluate discriminant validity and to measure emotion dysregulation. Items were measured on a 5-point Likert scale with 1 indicating almost never and 5 suggesting almost always. The Romanian version of DERS includes five subscales, in contrast with the 6-factor structure of the original version: *Lack of control* (encompassing the previous dimensions of impulse and strategies), *reject (lack of acceptance)*, *interference (lack of goals)*, *lack of attention (lack of awareness)* and *confusion (lack of clarity)*. Sample items can include: "When I am upset, I become out of control" and "I am confused about how I feel".
+
+**Measures of depression, anxiety and stress (DASS).** The 21-item Romanian validation of the Depression, Anxiety and Stress Scales-21 (DASS-21, @need_citation), based on the original version [@antony1998; @Lovibond-1995] was used to evaluate symptoms of depression, anxiety and stress and their relationship with behavioral emotion regulation strategies. Items were measured on a 4-point Likert scale with 0 indicating does not apply to me at all and 3 suggesting applies to me a lot most of the time. Sample items can include: "I found it hard to relax" and "I felt I had nothing to live for".
 
 # Results
+## Internal consistency analysis
+```{r measures, echo=F, include=FALSE}
+  source("2 - Consistency.R")
+```
+The Cronbach's \(\alpha\) and  MacDonald's \(\omega\) were used to assess the internal consistency of BERQ's scales and our data suggested good reliability indices for all  5 subscales: *Seeking distraction* (\(\alpha\)=`r a.SEEK.DIS[1]`, 95% CI [`r a.SEEK.DIS[2]`, `r a.SEEK.DIS[3]`], \(\omega\)= `r o.SEEK.DIS`), *Actively approaching* (\(\alpha\)=`r a.ACTI.APP[1]`, 95% CI [`r a.ACTI.APP[2]`, `r a.ACTI.APP[3]`], \(\omega\)=`r o.ACTI.APP`), *Seeking social support* (\(\alpha\)=`r a.SEEK.SOC[1]`, 95% CI [`r a.SEEK.SOC[2]`, `r a.SEEK.SOC[3]`], \(\omega\)=`r o.SEEK.SOC`), *Withdrawal* (\(\alpha\)=`r a.WITHDRAW[1]`, 95% CI [`r a.WITHDRAW[2]`, `r a.WITHDRAW[3]`, \(\omega\)=`r o.WITHDRAW`) and *Ignoring* (\(\alpha\)=`r a.IGNORING[1]`, 95% CI [`r a.IGNORING[2]`, `r a.IGNORING[3]`, \(\omega\)=`r o.IGNORING`]).
+
+## Test-retest reliability
+
+
+## Confirmatory factor analysis
+
+
+## Construct validity
+
+
+## Criterion validity
+
 
 # Discussion
 
