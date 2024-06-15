@@ -90,3 +90,14 @@ o <- psych::omega(m = ds %>% dplyr::select(key$ACTI.APP),
                   title = t)
 o.IGNORING <- c(as.numeric(round(o$om$omega.tot, 2)))  # Omega value
 
+
+
+# Compute total score ####
+scores <- psych::scoreItems(keys = key, items = ds, 
+                            totals = T, missing = T, 
+                            impute = "median")
+ds <- cbind(ds, scores$scores); head(ds)
+
+# Saving dataset
+save(ds, file = "Totals.RData")
+rm(a, t, o)
