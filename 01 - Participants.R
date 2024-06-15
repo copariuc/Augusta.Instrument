@@ -1,6 +1,5 @@
 # Installing and loading libraries
 
-
 # Loading dataset
 load(file = "Data.RData"); names(ds)
 

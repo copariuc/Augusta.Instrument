@@ -112,7 +112,7 @@ The translation of the original BERQ questionnaire was carried out by three qual
 # Results
 ## Internal consistency analysis
 ```{r measures, echo=F, include=FALSE}
-  source("2 - Consistency.R")
+  source("02 - Consistency.R")
 ```
 The Cronbach's \(\alpha\) and  MacDonald's \(\omega\) were used to assess the internal consistency of BERQ's scales and our data suggested good reliability indices for all  5 subscales: *Seeking distraction* (\(\alpha\)=`r a.SEEK.DIS[1]`, 95% CI [`r a.SEEK.DIS[2]`, `r a.SEEK.DIS[3]`], \(\omega\)= `r o.SEEK.DIS`), *Actively approaching* (\(\alpha\)=`r a.ACTI.APP[1]`, 95% CI [`r a.ACTI.APP[2]`, `r a.ACTI.APP[3]`], \(\omega\)=`r o.ACTI.APP`), *Seeking social support* (\(\alpha\)=`r a.SEEK.SOC[1]`, 95% CI [`r a.SEEK.SOC[2]`, `r a.SEEK.SOC[3]`], \(\omega\)=`r o.SEEK.SOC`), *Withdrawal* (\(\alpha\)=`r a.WITHDRAW[1]`, 95% CI [`r a.WITHDRAW[2]`, `r a.WITHDRAW[3]`, \(\omega\)=`r o.WITHDRAW`) and *Ignoring* (\(\alpha\)=`r a.IGNORING[1]`, 95% CI [`r a.IGNORING[2]`, `r a.IGNORING[3]`, \(\omega\)=`r o.IGNORING`]).
 
